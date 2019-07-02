@@ -4,19 +4,22 @@
 <html>
 
 <head>
-	<%@include file="head.jsp"%>
+<%@include file="head.jsp"%>
+
+
 </head>
 
 <body>
 
 	<%@include file="navBar.jsp"%>
-	<%@include file="list.jsp"%>
 
+
+	<h1>Les collaborateurs</h1>
+	
+	<%@include file="newCollab.jsp"%>
 
 
 	<%@include file="foot.jsp"%>
 
-
 </body>
-
 </html>

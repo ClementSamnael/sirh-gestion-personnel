@@ -141,4 +141,83 @@ public class Collaborateur {
         builder.append("]");
         return builder.toString();
     }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + (actif ? 1231 : 1237);
+        result = prime * result + ((adresse == null) ? 0 : adresse.hashCode());
+        result = prime * result + ((dateCreation == null) ? 0 : dateCreation.hashCode());
+        result = prime * result + ((dateNaissance == null) ? 0 : dateNaissance.hashCode());
+        result = prime * result + ((email == null) ? 0 : email.hashCode());
+        result = prime * result + ((matricule == null) ? 0 : matricule.hashCode());
+        result = prime * result + ((nom == null) ? 0 : nom.hashCode());
+        result = prime * result + ((photo == null) ? 0 : photo.hashCode());
+        result = prime * result + ((prenom == null) ? 0 : prenom.hashCode());
+        result = prime * result + ((secuSocial == null) ? 0 : secuSocial.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Collaborateur other = (Collaborateur) obj;
+        if (actif != other.actif)
+            return false;
+        if (adresse == null) {
+            if (other.adresse != null)
+                return false;
+        } else if (!adresse.equals(other.adresse))
+            return false;
+        if (dateCreation == null) {
+            if (other.dateCreation != null)
+                return false;
+        } else if (!dateCreation.equals(other.dateCreation))
+            return false;
+        if (dateNaissance == null) {
+            if (other.dateNaissance != null)
+                return false;
+        } else if (!dateNaissance.equals(other.dateNaissance))
+            return false;
+        if (email == null) {
+            if (other.email != null)
+                return false;
+        } else if (!email.equals(other.email))
+            return false;
+        if (matricule == null) {
+            if (other.matricule != null)
+                return false;
+        } else if (!matricule.equals(other.matricule))
+            return false;
+        if (nom == null) {
+            if (other.nom != null)
+                return false;
+        } else if (!nom.equals(other.nom))
+            return false;
+        if (photo == null) {
+            if (other.photo != null)
+                return false;
+        } else if (!photo.equals(other.photo))
+            return false;
+        if (prenom == null) {
+            if (other.prenom != null)
+                return false;
+        } else if (!prenom.equals(other.prenom))
+            return false;
+        if (secuSocial == null) {
+            if (other.secuSocial != null)
+                return false;
+        } else if (!secuSocial.equals(other.secuSocial))
+            return false;
+        return true;
+    }
+    
+    
+    
 }
