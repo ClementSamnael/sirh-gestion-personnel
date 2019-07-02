@@ -1,4 +1,5 @@
-<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" pageEncoding="UTF-8" isELIgnored="false"%>
 
 <!-- Required meta tags -->
 <meta charset="utf-8">

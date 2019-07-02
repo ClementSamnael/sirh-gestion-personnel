@@ -1,4 +1,5 @@
-<%@ page language="java" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page language="java" pageEncoding="UTF-8" isELIgnored="false"%>
 
 
 <div class="text-right">
@@ -48,7 +49,7 @@
 			<div class="card-body">
 				<div class="container">
 					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
+						<img src=<c:url value="/images/armorknight.jpg"/>
 							class="align-self-center mr-3" alt="armorknight">
 						<div class="media-body">
 							<p class="card-text">Fonction</p>
@@ -75,7 +76,7 @@
 			<div class="card-body">
 				<div class="container">
 					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
+						<img src=<c:url value="/images/armorknight.jpg"/>
 							class="align-self-center mr-3" alt="armorknight">
 						<div class="media-body">
 							<p class="card-text">Fonction</p>
@@ -102,91 +103,7 @@
 			<div class="card-body">
 				<div class="container">
 					<div class="media">
-						<img class="image-fluid"
-							src="<%=request.getContextPath()%>/images/armorknight.jpg"
-							class="align-self-center mr-3" alt="armorknight">
-						<div class="media-body">
-							<p class="card-text">Fonction</p>
-							<p class="card-text">Département</p>
-							<p class="card-text">Email</p>
-							<p class="card-text">Téléphone</p>
-						</div>
-						<div class="media-body">
-							<p class="card-text">XXXXXXXXX</p>
-							<p class="card-text">XXXXXXXXX</p>
-							<p class="card-text">XXXXXXXXX</p>
-							<p class="card-text">XXXXXXXXX</p>
-						</div>
-					</div>
-				</div>
-				<div class="text-right">
-					<button type="button" class="btn btn-dark">Éditer</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="card-deck m-5">
-		<div class="card">
-			<div class="card-header">NOM Prénom</div>
-			<div class="card-body">
-				<div class="container">
-					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
-							class="align-self-center mr-3" alt="armorknight">
-						<div class="media-body">
-							<p class="card-text">Fonction</p>
-							<p class="card-text">Département</p>
-							<p class="card-text">Email</p>
-							<p class="card-text">Téléphone</p>
-						</div>
-						<div class="media-body">
-							<p class="card-text">XXXXXXXXX</p>
-							<p class="card-text">XXXXXXXXX</p>
-							<p class="card-text">XXXXXXXXX</p>
-							<p class="card-text">XXXXXXXXX</p>
-						</div>
-					</div>
-				</div>
-				<div class="text-right">
-					<button type="button" class="btn btn-dark">Éditer</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-header">NOM Prénom</div>
-			<div class="card-body">
-				<div class="container">
-					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
-							class="align-self-center mr-3" alt="armorknight">
-						<div class="media-body">
-							<p class="card-text">Fonction</p>
-							<p class="card-text">Département</p>
-							<p class="card-text">Email</p>
-							<p class="card-text">Téléphone</p>
-						</div>
-						<div class="media-body">
-							<p class="card-text">XXXXXXXXX</p>
-							<p class="card-text">XXXXXXXXX</p>
-							<p class="card-text">XXXXXXXXX</p>
-							<p class="card-text">XXXXXXXXX</p>
-						</div>
-					</div>
-				</div>
-				<div class="text-right">
-					<button type="button" class="btn btn-dark">Éditer</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-header">NOM Prénom</div>
-			<div class="card-body">
-				<div class="container">
-					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
+						<img src=<c:url value="/images/armorknight.jpg"/>
 							class="align-self-center mr-3" alt="armorknight">
 						<div class="media-body">
 							<p class="card-text">Fonction</p>

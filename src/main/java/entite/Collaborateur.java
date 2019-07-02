@@ -1,6 +1,5 @@
 package entite;
 
-import java.time.LocalDate;
 import java.time.ZonedDateTime;
 
 public class Collaborateur {
@@ -8,7 +7,7 @@ public class Collaborateur {
     private String matricule;
     private String nom;
     private String prenom;
-    private LocalDate dateNaissance;
+    private String dateNaissance;
     private String adresse;
     private String secuSocial;
     private String email;
@@ -43,12 +42,12 @@ public class Collaborateur {
         this.prenom = prenom;
     }
 
-    public LocalDate getDateNaissance() {
+    public String getDateNaissance() {
         return dateNaissance;
     }
 
-    public void setDateNaissance(LocalDate dateNaissance) {
-        this.dateNaissance = dateNaissance;
+    public void setDateNaissance(String dateNaiss) {
+        this.dateNaissance = dateNaiss;
     }
 
     public String getAdresse() {
@@ -99,6 +98,14 @@ public class Collaborateur {
         this.actif = actif;
     }
 
+    public ZonedDateTime getCreationDateTime() {
+        return dateCreation;
+    }
+
+    public void setCreationDateTime(ZonedDateTime dateCreation) {
+        this.dateCreation = dateCreation;
+    }
+    
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
@@ -202,11 +209,4 @@ public class Collaborateur {
         return true;
     }
 
-    public void setCreationDateTime(ZonedDateTime now) {
-        // TODO Auto-generated method stub
-        
-    }
-    
-    
-    
 }

@@ -1,10 +1,11 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page import="java.time.LocalDate"%>
-<%@ page language="java" pageEncoding="UTF-8"%>
+<%@page language="java" pageEncoding="UTF-8" isELIgnored="false"%>
 
 
 <section class="container-fluid">
 	<div class="container">
-		<form action="<%= request.getContextPath() %>/collaborateurs/ajouter" method="post">
+		<form action=<c:url value="/collaborateurs/ajouter" /> method="post">
 			<div class="form-group row">
 				<label for="inputNom" class="col-sm-2 col-form-label">Nom</label>
 				<div class="col-sm-10">
