@@ -1,4 +1,4 @@
-package dev.sgp.web;
+package web;
 
 import java.io.IOException;
 import util.Constante;
