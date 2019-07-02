@@ -2,11 +2,16 @@ package dev.sgp.web;
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeParseException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import entite.Collaborateur;
+import util.Constante;
 
 public class AjouterCollaborateurController extends HttpServlet {
 
@@ -18,11 +23,36 @@ public class AjouterCollaborateurController extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {        
-        String lastName = req.getParameter("last-name");
-        String firstName = req.getParameter("first-name");
-        LocalDate birthDate = LocalDate.parse(req.getParameter("birth-date"));
-        String address = req.getParameter("address");
-        String socialNumber = req.getParameter("socialNumber");
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String nom = req.getParameter("inputNom");
+        String prenom = req.getParameter("inputPrenom");
+        LocalDate birthDate = LocalDate.parse(req.getParameter("inputDate"));
+        try {
+            birthDate = LocalDate.parse(req.getParameter("inputDate"));
+        } catch (DateTimeParseException e) {
+            birthDate = null;
+        }
+        String adresse = req.getParameter("inputAdresse");
+        String secuSocial = req.getParameter("inputSecu");
+
+        if (nom == null || "".equals(nom) || prenom == null || "".equals(prenom) || birthDate == null
+                || "".equals(birthDate) || adresse == null || "".equals(adresse) || secuSocial == null
+                || "".equals(secuSocial)) {
+
+            resp.setStatus(400);
+            req.getRequestDispatcher("/WEB-INF/views/collab/nouveauCollaborateur.jsp").forward(req, resp);
+        } else {
+            Collaborateur c = new Collaborateur();
+            c.setAdresse(adresse);
+            c.setDateNaissance(birthDate);
+            c.setNom(nom);
+            c.setPrenom(prenom);
+            c.setDateCreation(ZonedDateTime.now());
+            Constante.COLLAB_SERVICE.sauvegarderCollaborateur(c);
+
+            resp.sendRedirect(req.getContextPath() + "/collaborateurs/lister");
+
+        }
+
     }
 }

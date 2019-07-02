@@ -1,7 +1,7 @@
 package entite;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 
 public class Collaborateur {
 
@@ -13,26 +13,10 @@ public class Collaborateur {
     private String secuSocial;
     private String email;
     private String photo;
-    private LocalDateTime dateCreation;
+    private ZonedDateTime dateCreation;
     private boolean actif = true;
 
-    public Collaborateur(String matricule, String nom, String prenom, LocalDate dateNaissance, String adresse,
-            String secuSocial, String email, String photo, LocalDateTime dateCreation, boolean actif) {
-        super();
-        this.matricule = matricule;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.dateNaissance = dateNaissance;
-        this.adresse = adresse;
-        this.secuSocial = secuSocial;
-        this.email = email;
-        this.photo = photo;
-        this.dateCreation = dateCreation;
-        this.actif = actif;
-    }
-
     public Collaborateur() {
-        super();
     }
 
     public String getMatricule() {
@@ -99,12 +83,12 @@ public class Collaborateur {
         this.photo = photo;
     }
 
-    public LocalDateTime getDateCreation() {
+    public ZonedDateTime getDateCreation() {
         return dateCreation;
     }
 
-    public void setDateCreation(LocalDateTime dateCreation) {
-        this.dateCreation = dateCreation;
+    public void setDateCreation(ZonedDateTime zonedDateTime) {
+        this.dateCreation = zonedDateTime;
     }
 
     public boolean isActif() {
@@ -216,6 +200,11 @@ public class Collaborateur {
         } else if (!secuSocial.equals(other.secuSocial))
             return false;
         return true;
+    }
+
+    public void setCreationDateTime(ZonedDateTime now) {
+        // TODO Auto-generated method stub
+        
     }
     
     
