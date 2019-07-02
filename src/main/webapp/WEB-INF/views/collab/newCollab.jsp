@@ -2,13 +2,11 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 
 
-	<p hidden><%=LocalDate.now()%></p>
-	
-	
+<p hidden><%=LocalDate.now()%></p>
 
 <section class="container-fluid">
 	<div class="container">
-		<form>
+		<form action="<%= request.getContextPath() %>/collaborateurs/ajouter" method="post">
 			<div class="form-group row">
 				<label for="inputNom" class="col-sm-2 col-form-label">Nom</label>
 				<div class="col-sm-10">
@@ -45,7 +43,6 @@
 						placeholder="X-XXXX-XXXX-XXXX-XX" required>
 				</div>
 			</div>
-
 
 			<div class="text-right">
 				<!-- Button trigger modal -->

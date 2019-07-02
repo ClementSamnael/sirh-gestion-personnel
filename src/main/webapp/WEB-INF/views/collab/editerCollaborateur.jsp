@@ -18,7 +18,6 @@
 	
 	<%@include file="newCollab.jsp"%>
 
-
 	<%@include file="foot.jsp"%>
 
 </body>
