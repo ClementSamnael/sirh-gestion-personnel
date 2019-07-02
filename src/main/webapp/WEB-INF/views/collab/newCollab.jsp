@@ -1,4 +1,8 @@
+<%@page import="java.time.LocalDate"%>
 <%@ page language="java" pageEncoding="UTF-8"%>
+
+
+	<p hidden><%=LocalDate.now()%></p>
 
 <section class="container-fluid">
 	<div class="container">
@@ -39,6 +43,16 @@
 						placeholder="X-XXXX-XXXX-XXXX-XX" required>
 				</div>
 			</div>
+
+			<div class="form-group row">
+				<label for="inputSecu" class="col-sm-2 col-form-label">Numéro
+					de sécurité social</label>
+				<div class="col-sm-10">
+					<input type="number" class="form-control" id="inputSecu"
+						placeholder="X-XXXX-XXXX-XXXX-XX" required>
+				</div>
+			</div>
+
 
 			<div class="text-right">
 				<!-- Button trigger modal -->

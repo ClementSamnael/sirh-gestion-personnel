@@ -13,12 +13,12 @@ public class AjouterCollaborateurController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        req.setAttribute("dateCreation", LocalDate.now());
         req.getRequestDispatcher("/WEB-INF/views/collab/editerCollaborateur.jsp").forward(req, resp);
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {        
         String lastName = req.getParameter("last-name");
         String firstName = req.getParameter("first-name");
         LocalDate birthDate = LocalDate.parse(req.getParameter("birth-date"));
