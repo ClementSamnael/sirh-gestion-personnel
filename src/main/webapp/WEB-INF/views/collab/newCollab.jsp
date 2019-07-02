@@ -2,8 +2,6 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 
 
-<p hidden><%=LocalDate.now()%></p>
-
 <section class="container-fluid">
 	<div class="container">
 		<form action="<%= request.getContextPath() %>/collaborateurs/ajouter" method="post">
