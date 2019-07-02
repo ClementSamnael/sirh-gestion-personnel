@@ -40,7 +40,7 @@ public class AjouterCollaborateurController extends HttpServlet {
                 || "".equals(secuSocial)) {
 
             resp.setStatus(400);
-            req.getRequestDispatcher("/WEB-INF/views/collab/nouveauCollaborateur.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/views/collab/newCollab.jsp").forward(req, resp);
         } else {
             Collaborateur c = new Collaborateur();
             c.setAdresse(adresse);
