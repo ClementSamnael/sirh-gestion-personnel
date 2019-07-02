@@ -2,8 +2,8 @@
 
 
 <div class="text-right">
-	<button type="button" class="btn btn-dark">Ajout d'un nouveau
-		Collaborateur</button>
+	<a class="btn btn-dark" href="ajouter">Ajout d'un nouveau
+		Collaborateur </a>
 </div>
 <section class="container-fluid">
 
@@ -48,8 +48,8 @@
 			<div class="card-body">
 				<div class="container">
 					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg" class="align-self-center mr-3"
-							alt="armorknight">
+						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
+							class="align-self-center mr-3" alt="armorknight">
 						<div class="media-body">
 							<p class="card-text">Fonction</p>
 							<p class="card-text">Département</p>
@@ -75,8 +75,8 @@
 			<div class="card-body">
 				<div class="container">
 					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg" class="align-self-center mr-3"
-							alt="armorknight">
+						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
+							class="align-self-center mr-3" alt="armorknight">
 						<div class="media-body">
 							<p class="card-text">Fonction</p>
 							<p class="card-text">Département</p>
@@ -102,7 +102,8 @@
 			<div class="card-body">
 				<div class="container">
 					<div class="media">
-						<img class="image-fluid" src="<%=request.getContextPath()%>/images/armorknight.jpg"
+						<img class="image-fluid"
+							src="<%=request.getContextPath()%>/images/armorknight.jpg"
 							class="align-self-center mr-3" alt="armorknight">
 						<div class="media-body">
 							<p class="card-text">Fonction</p>
@@ -131,8 +132,8 @@
 			<div class="card-body">
 				<div class="container">
 					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg" class="align-self-center mr-3"
-							alt="armorknight">
+						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
+							class="align-self-center mr-3" alt="armorknight">
 						<div class="media-body">
 							<p class="card-text">Fonction</p>
 							<p class="card-text">Département</p>
@@ -158,8 +159,8 @@
 			<div class="card-body">
 				<div class="container">
 					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg" class="align-self-center mr-3"
-							alt="armorknight">
+						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
+							class="align-self-center mr-3" alt="armorknight">
 						<div class="media-body">
 							<p class="card-text">Fonction</p>
 							<p class="card-text">Département</p>
@@ -185,8 +186,8 @@
 			<div class="card-body">
 				<div class="container">
 					<div class="media">
-						<img src="<%=request.getContextPath()%>/images/armorknight.jpg" class="align-self-center mr-3"
-							alt="armorknight">
+						<img src="<%=request.getContextPath()%>/images/armorknight.jpg"
+							class="align-self-center mr-3" alt="armorknight">
 						<div class="media-body">
 							<p class="card-text">Fonction</p>
 							<p class="card-text">Département</p>
