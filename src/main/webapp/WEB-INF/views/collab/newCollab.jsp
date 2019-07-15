@@ -6,6 +6,7 @@
 <section class="container-fluid">
 	<div class="container">
 		<form action=<c:url value="/collaborateurs/ajouter" /> method="post">
+
 			<div class="form-group row">
 				<label for="inputNom" class="col-sm-2 col-form-label">Nom</label>
 				<div class="col-sm-10">
